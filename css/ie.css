@@ -1,0 +1,9 @@
+/* This CSS stylesheet contains "hacks" for Internet Explorer 9 or lower. */
+
+header {
+	margin-top: 0;
+}
+
+header p {
+	padding-top: 8px;
+}

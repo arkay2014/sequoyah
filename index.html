@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Widget</title>
+<link rel="stylesheet" href="css/styles.css">
+<!--[if lt IE 10]><link href="css/ie.css" rel="stylesheet"><![endif]-->
+<script type="text/javascript" src="js/contact.js"></script>
+<!-- enable HTML5 elements in IE7 and IE8 -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body onload="resetSelect()" >
+	<div id="container">
+    	<header>
+        	<p>Contacts</p>
+        </header>
+        <div id="content">
+            <!-- The following sections create the structure and display the initial values for each section. -->
+            <section class="odd-section" onMouseOver="contactMouseover('section-overlay-1', 'contact-overlay-1');">
+                <div class="green-dot"></div>
+                <div class="contact-name odd-border">
+                    Christian
+                </div>
+                <div id="contact1" class="contact-info">
+                    christian@yahoo.com
+                </div>
+            </section>
+            <section class="even-section" onMouseOver="contactMouseover('section-overlay-2', 'contact-overlay-2');">
+                <div class="green-dot"></div>
+                <div class="contact-name even-border">
+                    Rich
+                </div>
+                <div id="contact2" class="contact-info">
+                    rich@tripod.com
+                </div>
+            </section>
+            <section class="odd-section" onMouseOver="contactMouseover('section-overlay-3', 'contact-overlay-3');">
+                <div class="green-dot"></div>
+                <div class="contact-name odd-border">
+                    Scott
+                </div>
+                <div id="contact3" class="contact-info">
+                    scott@mailinator.com
+                </div>
+            </section>
+            <section class="even-section" onMouseOver="contactMouseover('section-overlay-4', 'contact-overlay-4');">
+                <div class="green-dot"></div>
+                <div class="contact-name even-border">
+                    Danny
+                </div>
+                <div id="contact4" class="contact-info">
+                    danny@hotmail.com
+                </div>
+            </section>
+            <section class="odd-section" onMouseOver="contactMouseover('section-overlay-5', 'contact-overlay-5');">
+                <div class="red-dot"></div>
+                <div class="contact-name odd-border">
+                    Taka
+                </div>
+                <div id="contact5" class="contact-info">
+                    taka@myspace.com
+                </div>
+            </section>
+            <section class="even-section" onMouseOver="contactMouseover('section-overlay-6', 'contact-overlay-6');">
+                <div class="yellow-dot"></div>
+                <div class="contact-name even-border">
+                    Tim
+                </div>
+                <div id="contact6" class="contact-info">
+                    tim@netscape.com
+                </div>
+            </section>
+            <section class="odd-section" onMouseOver="contactMouseover('section-overlay-7', 'contact-overlay-7');">
+                <div class="green-dot"></div>
+                <div class="contact-name odd-border">
+                    Patrick
+                </div>
+                <div id="contact7" class="contact-info">
+                    patrick@live.com
+                </div>
+            </section>
+            <section class="even-section" onMouseOver="contactMouseover('section-overlay-8', 'contact-overlay-8');">
+                <div class="yellow-dot"></div>
+                <div class="contact-name even-border">
+                    Jacques
+                </div>
+                <div id="contact8" class="contact-info">
+                    jacques@aol.com
+                </div>
+            </section> 
+            <!-- End of sections -->
+            
+            <!-- The following code is used to create the information overlay when the pointer hovers over a contact. -->
+            <div id="overlay"></div>
+            <div id="section-overlay-1" class="section-overlay" onMouseOut="contactMouseout('section-overlay-1');" >
+                <div class="green-dot"></div>
+                <div class="contact-name">
+                    Christian
+                </div>
+                <div class="contact-email contact-info">
+                    <a href="#">christian@yahoo.com</a>
+                </div>
+                <div id="contact-overlay-1" class="contact-overlay">
+                    <p>323-555-1234</p>
+                    <p>123 Main Street<br>
+                       Spokane, WA 99201</p>
+                </div>
+            </div> 
+            <div id="section-overlay-2" class="section-overlay" onMouseOut="contactMouseout('section-overlay-2');" >
+                <div class="green-dot"></div>
+                <div class="contact-name">
+                    Rich
+                </div>
+                <div class="contact-email contact-info">
+                    <a href="#">rich@tripod.com</a>
+                </div>
+                <div id="contact-overlay-2" class="contact-overlay">
+                    <p>323-555-1234</p>
+                    <p>456 First Street<br>
+                       Spokane, WA 99201</p>
+                </div>
+            </div> 
+            <div id="section-overlay-3" class="section-overlay" onMouseOut="contactMouseout('section-overlay-3');" >
+                <div class="green-dot"></div>
+                <div class="contact-name">
+                    Scott
+                </div>
+                <div class="contact-email contact-info">
+                    <a href="#">scott@mailinator.com</a>
+                </div>
+                <div id="contact-overlay-3" class="contact-overlay">
+                    <p>323-555-1234</p>
+                    <p>789 Second Street<br>
+                       Spokane, WA 99201</p>
+                </div>
+            </div> 
+            <div id="section-overlay-4" class="section-overlay" onMouseOut="contactMouseout('section-overlay-4');" >
+                <div class="green-dot"></div>
+                <div class="contact-name">
+                    Danny
+                </div>
+                <div class="contact-email contact-info">
+                    <a href="#">danny@hotmail.com</a>
+                </div>
+                <div id="contact-overlay-4" class="contact-overlay">
+                    <p>323-555-1234</p>
+                    <p>101 Third Street<br>
+                       Spokane, WA 99201</p>
+                </div>
+            </div> 
+            <div id="section-overlay-5" class="section-overlay" onMouseOut="contactMouseout('section-overlay-5');" >
+                <div class="red-dot"></div>
+                <div class="contact-name">
+                    Taka
+                </div>
+                <div class="contact-email contact-info">
+                    <a href="#">taka@myspace.com</a>
+                </div>
+                <div id="contact-overlay-5" class="contact-overlay">
+                    <p>323-555-1234</p>
+                    <p>112 Fourth Street<br>
+                       Spokane, WA 99201</p>
+                </div>
+            </div> 
+            <div id="section-overlay-6" class="section-overlay" onMouseOut="contactMouseout('section-overlay-6');" >
+                <div class="yellow-dot"></div>
+                <div class="contact-name">
+                    Tim
+                </div>
+                <div class="contact-email contact-info">
+                    <a href="#">tim@netscape.com</a>
+                </div>
+                <div id="contact-overlay-6" class="contact-overlay">
+                    <p>323-555-1234</p>
+                    <p>131 Fifth Street<br>
+                       Spokane, WA 99201</p>
+                </div>
+            </div>
+             <div id="section-overlay-7" class="section-overlay" onMouseOut="contactMouseout('section-overlay-7');" >
+                <div class="green-dot"></div>
+                <div class="contact-name">
+                    Patrick
+                </div>
+                <div class="contact-email contact-info">
+                    <a href="#">patrick@live.com</a>
+                </div>
+                <div id="contact-overlay-7" class="contact-overlay">
+                    <p>323-555-1234</p>
+                    <p>415 Sixth Street<br>
+                       Spokane, WA 99201</p>
+                </div>
+            </div>
+             <div id="section-overlay-8" class="section-overlay" onMouseOut="contactMouseout('section-overlay-8');" >
+                <div class="yellow-dot"></div>
+                <div class="contact-name">
+                    Jacques
+                </div>
+                <div class="contact-email contact-info">
+                    <a href="#">jacques@aol.com</a>
+                </div>
+                <div id="contact-overlay-8" class="contact-overlay">
+                    <p>323-555-1234</p>
+                    <p>161 Seventh Street<br>
+                       Spokane, WA 99201</p>
+                </div>
+            </div> 
+            <!-- End of mouse-over information overlays --> 
+        </div> <!-- End of "content" div -->
+        <footer>
+        	<select id="info-select" onclick="infoSelect();">
+            	<option>Email address</option>
+                <option>Phone number</option>
+            </select>
+        </footer>
+    </div>
+</body>
+</html>
